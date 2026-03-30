@@ -1,6 +1,6 @@
 # Wishbone B4 Slave Memory
 
-A simple, synthesizable **Wishbone B4** compliant 16×8-bit memory slave written in Verilog, accompanied by a clean SystemVerilog interface-based self-checking testbench.
+A simple, synthesisable **Wishbone B4** compliant 16×8-bit memory slave written in Verilog, accompanied by a clean SystemVerilog interface-based self-checking testbench.
 
 ## Features
 
