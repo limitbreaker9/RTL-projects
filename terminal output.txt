@@ -1,0 +1,10 @@
+xcelium> source /xcelium25.03/tools/xcelium/files/xmsimrc
+xcelium> run
+PASS at addr 10 read data is 100 
+PASS at addr 3 read data is 201 
+test bench completed
+Simulation complete via $finish(1) at time 75 NS + 1
+./testbench.sv:83     $finish;
+xcelium> exit
+TOOL:	xrun	25.03-s001: Exiting on Mar 30, 2026 at 12:58:33 EDT  (total: 00:00:02)
+Done
