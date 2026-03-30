@@ -1,6 +1,6 @@
 interface wishbone_if(
-    input clk,
-    input rst_n);
+input clk,
+input rst_n);
 logic cyc;
 logic stb;
 logic we;
