@@ -1,0 +1,838 @@
+$date
+	Tue Mar 24 13:07:36 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module top_traffic_fsm_tb $end
+$var wire 4 ! yellow_time [3:0] $end
+$var wire 4 " green_time [3:0] $end
+$var wire 3 # NS [2:0] $end
+$var wire 3 $ EW [2:0] $end
+$var reg 4 % addr [3:0] $end
+$var reg 1 & clk $end
+$var reg 1 ' rst $end
+$var reg 32 ( write_data [31:0] $end
+$var reg 1 ) write_en $end
+$scope module a1 $end
+$var wire 4 * addr [3:0] $end
+$var wire 1 & clk $end
+$var wire 1 ' rst $end
+$var wire 32 + write_data [31:0] $end
+$var wire 1 ) write_en $end
+$var wire 4 , yellow_time [3:0] $end
+$var wire 2 - next [1:0] $end
+$var wire 4 . green_time [3:0] $end
+$var wire 4 / count [3:0] $end
+$var wire 3 0 NS [2:0] $end
+$var wire 3 1 EW [2:0] $end
+$var reg 2 2 present [1:0] $end
+$scope module a1 $end
+$var wire 4 3 addr [3:0] $end
+$var wire 1 & clk $end
+$var wire 1 ' rst $end
+$var wire 32 4 write_data [31:0] $end
+$var wire 1 ) write_en $end
+$var parameter 4 5 GREEN_ADDR $end
+$var parameter 4 6 YELLOW_ADDR $end
+$var reg 4 7 green_time [3:0] $end
+$var reg 4 8 yellow_time [3:0] $end
+$upscope $end
+$scope module f1 $end
+$var wire 4 9 green_time [3:0] $end
+$var wire 2 : present [1:0] $end
+$var wire 4 ; yellow_time [3:0] $end
+$var wire 4 < count [3:0] $end
+$var reg 2 = next [1:0] $end
+$upscope $end
+$scope module out1 $end
+$var wire 2 > present [1:0] $end
+$var parameter 3 ? green $end
+$var parameter 3 @ red $end
+$var parameter 3 A yellow $end
+$var reg 3 B EW [2:0] $end
+$var reg 3 C NS [2:0] $end
+$upscope $end
+$scope module t1 $end
+$var wire 1 & clk $end
+$var wire 4 D green_time [3:0] $end
+$var wire 2 E present [1:0] $end
+$var wire 1 ' rst $end
+$var wire 4 F yellow_time [3:0] $end
+$var reg 4 G count [3:0] $end
+$upscope $end
+$upscope $end
+$scope module r2 $end
+$var wire 4 H addr [3:0] $end
+$var wire 1 & clk $end
+$var wire 1 ' rst $end
+$var wire 32 I write_data [31:0] $end
+$var wire 1 ) write_en $end
+$var parameter 4 J GREEN_ADDR $end
+$var parameter 4 K YELLOW_ADDR $end
+$var reg 4 L green_time [3:0] $end
+$var reg 4 M yellow_time [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 K
+b0 J
+b10 A
+b100 @
+b1 ?
+b100 6
+b0 5
+$end
+#0
+$dumpvars
+bx M
+bx L
+b0 I
+b0 H
+bx G
+bx F
+bx E
+bx D
+bx C
+bx B
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+b0 4
+b0 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+bx -
+bx ,
+b0 +
+b0 *
+0)
+b0 (
+0'
+0&
+b0 %
+bx $
+bx #
+bx "
+bx !
+$end
+#5
+b0 -
+b0 =
+b100 $
+b100 1
+b100 B
+b1 #
+b1 0
+b1 C
+b0 /
+b0 <
+b0 G
+b11 ,
+b11 8
+b11 ;
+b11 F
+b1010 .
+b1010 7
+b1010 9
+b1010 D
+b0 2
+b0 :
+b0 >
+b0 E
+b11 !
+b11 M
+b1010 "
+b1010 L
+1&
+#10
+0&
+#12
+1'
+#15
+b1 /
+b1 <
+b1 G
+1&
+#20
+0&
+#25
+b10 /
+b10 <
+b10 G
+1&
+#30
+0&
+#35
+b11 /
+b11 <
+b11 G
+1&
+#40
+0&
+#45
+b100 /
+b100 <
+b100 G
+1&
+#50
+0&
+#55
+b101 /
+b101 <
+b101 G
+1&
+#60
+0&
+#65
+b110 /
+b110 <
+b110 G
+1&
+#70
+0&
+#75
+b111 /
+b111 <
+b111 G
+1&
+#80
+0&
+#85
+b1000 /
+b1000 <
+b1000 G
+1&
+#90
+0&
+#95
+b1 -
+b1 =
+b1001 /
+b1001 <
+b1001 G
+1&
+#100
+0&
+#105
+b10 #
+b10 0
+b10 C
+b0 /
+b0 <
+b0 G
+b1 2
+b1 :
+b1 >
+b1 E
+1&
+#110
+0&
+#115
+b1 /
+b1 <
+b1 G
+1&
+#120
+0&
+#125
+b10 -
+b10 =
+b10 /
+b10 <
+b10 G
+1&
+#130
+0&
+#135
+b1 $
+b1 1
+b1 B
+b100 #
+b100 0
+b100 C
+b10 2
+b10 :
+b10 >
+b10 E
+b0 /
+b0 <
+b0 G
+1&
+#140
+0&
+#145
+b1 /
+b1 <
+b1 G
+1&
+#150
+0&
+#155
+b10 /
+b10 <
+b10 G
+1&
+#160
+0&
+#165
+b11 /
+b11 <
+b11 G
+1&
+#170
+0&
+#175
+b100 /
+b100 <
+b100 G
+1&
+#180
+0&
+#185
+b101 /
+b101 <
+b101 G
+1&
+#190
+0&
+#195
+b110 /
+b110 <
+b110 G
+1&
+#200
+0&
+#205
+b111 /
+b111 <
+b111 G
+1&
+#210
+0&
+#215
+b1000 /
+b1000 <
+b1000 G
+1&
+#220
+0&
+#225
+b11 -
+b11 =
+b1001 /
+b1001 <
+b1001 G
+1&
+#230
+0&
+#235
+b10 $
+b10 1
+b10 B
+b11 2
+b11 :
+b11 >
+b11 E
+b0 /
+b0 <
+b0 G
+1&
+#240
+0&
+#245
+b1 /
+b1 <
+b1 G
+1&
+#250
+0&
+#255
+b0 -
+b0 =
+b10 /
+b10 <
+b10 G
+1&
+#260
+0&
+#265
+b100 $
+b100 1
+b100 B
+b1 #
+b1 0
+b1 C
+b0 /
+b0 <
+b0 G
+b0 2
+b0 :
+b0 >
+b0 E
+1&
+#270
+0&
+#275
+b1 /
+b1 <
+b1 G
+1&
+#280
+0&
+#285
+b10 /
+b10 <
+b10 G
+1&
+#290
+0&
+#295
+b11 /
+b11 <
+b11 G
+1&
+#300
+0&
+#305
+b100 /
+b100 <
+b100 G
+1&
+#310
+0&
+#315
+b101 /
+b101 <
+b101 G
+1&
+#320
+0&
+#325
+b110 /
+b110 <
+b110 G
+1&
+#330
+0&
+#335
+b111 /
+b111 <
+b111 G
+1&
+#340
+0&
+#345
+b1000 /
+b1000 <
+b1000 G
+1&
+#350
+0&
+#355
+b1 -
+b1 =
+b1001 /
+b1001 <
+b1001 G
+1&
+#360
+0&
+#365
+b10 #
+b10 0
+b10 C
+b0 /
+b0 <
+b0 G
+b1 2
+b1 :
+b1 >
+b1 E
+1&
+#370
+0&
+#375
+b1 /
+b1 <
+b1 G
+1&
+#380
+0&
+#385
+b10 -
+b10 =
+b10 /
+b10 <
+b10 G
+1&
+#390
+0&
+#395
+b1 $
+b1 1
+b1 B
+b100 #
+b100 0
+b100 C
+b10 2
+b10 :
+b10 >
+b10 E
+b0 /
+b0 <
+b0 G
+1&
+#400
+0&
+#405
+b1 /
+b1 <
+b1 G
+b1111 .
+b1111 7
+b1111 9
+b1111 D
+b1111 "
+b1111 L
+1&
+1)
+b1111 (
+b1111 +
+b1111 4
+b1111 I
+#410
+0&
+0)
+#415
+b1010 !
+b1010 M
+b1010 ,
+b1010 8
+b1010 ;
+b1010 F
+b10 /
+b10 <
+b10 G
+1&
+1)
+b1010 (
+b1010 +
+b1010 4
+b1010 I
+b100 %
+b100 *
+b100 3
+b100 H
+#420
+0&
+0)
+#425
+b11 /
+b11 <
+b11 G
+1&
+#430
+0&
+#435
+b100 /
+b100 <
+b100 G
+1&
+#440
+0&
+#445
+b101 /
+b101 <
+b101 G
+1&
+#450
+0&
+#455
+b110 /
+b110 <
+b110 G
+1&
+#460
+0&
+#465
+b111 /
+b111 <
+b111 G
+1&
+#470
+0&
+#475
+b1000 /
+b1000 <
+b1000 G
+1&
+#480
+0&
+#485
+b1001 /
+b1001 <
+b1001 G
+1&
+#490
+0&
+#495
+b1010 /
+b1010 <
+b1010 G
+1&
+#500
+0&
+#505
+b1011 /
+b1011 <
+b1011 G
+1&
+#510
+0&
+#515
+b1100 /
+b1100 <
+b1100 G
+1&
+#520
+0&
+#525
+b1101 /
+b1101 <
+b1101 G
+1&
+#530
+0&
+#535
+b11 -
+b11 =
+b1110 /
+b1110 <
+b1110 G
+1&
+#540
+0&
+#545
+b10 $
+b10 1
+b10 B
+b0 /
+b0 <
+b0 G
+b11 2
+b11 :
+b11 >
+b11 E
+1&
+#550
+0&
+#555
+b1 /
+b1 <
+b1 G
+1&
+#560
+0&
+#565
+b10 /
+b10 <
+b10 G
+1&
+#570
+0&
+#575
+b11 /
+b11 <
+b11 G
+1&
+#580
+0&
+#585
+b100 /
+b100 <
+b100 G
+1&
+#590
+0&
+#595
+b101 /
+b101 <
+b101 G
+1&
+#600
+0&
+#605
+b110 /
+b110 <
+b110 G
+1&
+#610
+0&
+#615
+b111 /
+b111 <
+b111 G
+1&
+#620
+0&
+#625
+b1000 /
+b1000 <
+b1000 G
+1&
+#630
+0&
+#635
+b0 -
+b0 =
+b1001 /
+b1001 <
+b1001 G
+1&
+#640
+0&
+#645
+b100 $
+b100 1
+b100 B
+b1 #
+b1 0
+b1 C
+b0 /
+b0 <
+b0 G
+b0 2
+b0 :
+b0 >
+b0 E
+1&
+#650
+0&
+#655
+b1 /
+b1 <
+b1 G
+1&
+#660
+0&
+#665
+b10 /
+b10 <
+b10 G
+1&
+#670
+0&
+#675
+b11 /
+b11 <
+b11 G
+1&
+#680
+0&
+#685
+b100 /
+b100 <
+b100 G
+1&
+#690
+0&
+#695
+b101 /
+b101 <
+b101 G
+1&
+#700
+0&
+#705
+b110 /
+b110 <
+b110 G
+1&
+#710
+0&
+#715
+b111 /
+b111 <
+b111 G
+1&
+#720
+0&
+#725
+b1000 /
+b1000 <
+b1000 G
+1&
+#730
+0&
+#735
+b1001 /
+b1001 <
+b1001 G
+1&
+#740
+0&
+#745
+b1010 /
+b1010 <
+b1010 G
+1&
+#750
+0&
+#755
+b1011 /
+b1011 <
+b1011 G
+1&
+#760
+0&
+#765
+b1100 /
+b1100 <
+b1100 G
+1&
+#770
+0&
+#775
+b1101 /
+b1101 <
+b1101 G
+1&
+#780
+0&
+#785
+b1 -
+b1 =
+b1110 /
+b1110 <
+b1110 G
+1&
+#790
+0&
+#795
+b10 #
+b10 0
+b10 C
+b1 2
+b1 :
+b1 >
+b1 E
+b0 /
+b0 <
+b0 G
+1&
+#800
+0&

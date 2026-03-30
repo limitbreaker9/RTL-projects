@@ -1,0 +1,87 @@
+traffic-light-fsm-evolution\v2_modular_with_registers> iverilog fsm_module.v output_module.v timer_module.v top_module.v traffic_light_fsm_tb.v register_write_interface.v
+traffic-light-fsm-evolution\v2_modular_with_registers> vvp a.out                     
+VCD info: dumpfile traffic.vcd opened for output.
+T=0 | we=0 | wdata=         0 | addr=0 | G_Time= x | Y_Time= x | state=xx | count= x | NS=xxx | EW=xxx
+T=5 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 0 | NS=001 | EW=100
+T=15 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 1 | NS=001 | EW=100
+T=25 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 2 | NS=001 | EW=100
+T=35 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 3 | NS=001 | EW=100
+T=45 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 4 | NS=001 | EW=100
+T=55 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 5 | NS=001 | EW=100
+T=65 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 6 | NS=001 | EW=100
+T=75 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 7 | NS=001 | EW=100
+T=85 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 8 | NS=001 | EW=100
+T=95 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 9 | NS=001 | EW=100
+T=105 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=01 | count= 0 | NS=010 | EW=100
+T=115 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=01 | count= 1 | NS=010 | EW=100
+T=125 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=01 | count= 2 | NS=010 | EW=100
+T=135 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=10 | count= 0 | NS=100 | EW=001
+T=145 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=10 | count= 1 | NS=100 | EW=001
+T=155 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=10 | count= 2 | NS=100 | EW=001
+T=165 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=10 | count= 3 | NS=100 | EW=001
+T=175 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=10 | count= 4 | NS=100 | EW=001
+T=185 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=10 | count= 5 | NS=100 | EW=001
+T=195 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=10 | count= 6 | NS=100 | EW=001
+T=205 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=10 | count= 7 | NS=100 | EW=001
+T=215 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=10 | count= 8 | NS=100 | EW=001
+T=225 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=10 | count= 9 | NS=100 | EW=001
+T=235 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=11 | count= 0 | NS=100 | EW=010
+T=245 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=11 | count= 1 | NS=100 | EW=010
+T=255 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=11 | count= 2 | NS=100 | EW=010
+T=265 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 0 | NS=001 | EW=100
+T=275 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 1 | NS=001 | EW=100
+T=285 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 2 | NS=001 | EW=100
+T=295 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 3 | NS=001 | EW=100
+T=305 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 4 | NS=001 | EW=100
+T=315 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 5 | NS=001 | EW=100
+T=325 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 6 | NS=001 | EW=100
+T=335 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 7 | NS=001 | EW=100
+T=345 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 8 | NS=001 | EW=100
+T=355 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=00 | count= 9 | NS=001 | EW=100
+T=365 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=01 | count= 0 | NS=010 | EW=100
+T=375 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=01 | count= 1 | NS=010 | EW=100
+T=385 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=01 | count= 2 | NS=010 | EW=100
+T=395 | we=0 | wdata=         0 | addr=0 | G_Time=10 | Y_Time= 3 | state=10 | count= 0 | NS=100 | EW=001
+T=405 | we=1 | wdata=        15 | addr=0 | G_Time=15 | Y_Time= 3 | state=10 | count= 1 | NS=100 | EW=001
+T=410 | we=0 | wdata=        15 | addr=0 | G_Time=15 | Y_Time= 3 | state=10 | count= 1 | NS=100 | EW=001
+T=415 | we=1 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=10 | count= 2 | NS=100 | EW=001
+T=420 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=10 | count= 2 | NS=100 | EW=001
+T=425 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=10 | count= 3 | NS=100 | EW=001
+T=435 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=10 | count= 4 | NS=100 | EW=001
+T=445 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=10 | count= 5 | NS=100 | EW=001
+T=455 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=10 | count= 6 | NS=100 | EW=001
+T=465 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=10 | count= 7 | NS=100 | EW=001
+T=475 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=10 | count= 8 | NS=100 | EW=001
+T=485 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=10 | count= 9 | NS=100 | EW=001
+T=495 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=10 | count=10 | NS=100 | EW=001
+T=505 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=10 | count=11 | NS=100 | EW=001
+T=515 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=10 | count=12 | NS=100 | EW=001
+T=525 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=10 | count=13 | NS=100 | EW=001
+T=535 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=10 | count=14 | NS=100 | EW=001
+T=545 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=11 | count= 0 | NS=100 | EW=010
+T=555 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=11 | count= 1 | NS=100 | EW=010
+T=565 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=11 | count= 2 | NS=100 | EW=010
+T=575 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=11 | count= 3 | NS=100 | EW=010
+T=585 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=11 | count= 4 | NS=100 | EW=010
+T=595 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=11 | count= 5 | NS=100 | EW=010
+T=605 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=11 | count= 6 | NS=100 | EW=010
+T=615 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=11 | count= 7 | NS=100 | EW=010
+T=625 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=11 | count= 8 | NS=100 | EW=010
+T=635 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=11 | count= 9 | NS=100 | EW=010
+T=645 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=00 | count= 0 | NS=001 | EW=100
+T=655 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=00 | count= 1 | NS=001 | EW=100
+T=665 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=00 | count= 2 | NS=001 | EW=100
+T=675 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=00 | count= 3 | NS=001 | EW=100
+T=685 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=00 | count= 4 | NS=001 | EW=100
+T=695 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=00 | count= 5 | NS=001 | EW=100
+T=705 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=00 | count= 6 | NS=001 | EW=100
+T=715 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=00 | count= 7 | NS=001 | EW=100
+T=725 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=00 | count= 8 | NS=001 | EW=100
+T=735 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=00 | count= 9 | NS=001 | EW=100
+T=745 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=00 | count=10 | NS=001 | EW=100
+T=755 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=00 | count=11 | NS=001 | EW=100
+T=765 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=00 | count=12 | NS=001 | EW=100
+T=775 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=00 | count=13 | NS=001 | EW=100
+T=785 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=00 | count=14 | NS=001 | EW=100
+T=795 | we=0 | wdata=        10 | addr=4 | G_Time=15 | Y_Time=10 | state=01 | count= 0 | NS=010 | EW=100
+traffic_light_fsm_tb.v:53: $finish called at 800 (1s)

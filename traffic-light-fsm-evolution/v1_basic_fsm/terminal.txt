@@ -1,0 +1,57 @@
+traffic-light-fsm-evolution\v1_basic_fsm> iverilog traffic_light_fsm.v traffic_light_tb.v
+traffic-light-fsm-evolution\v1_basic_fsm> vvp a.out                                  
+VCD info: dumpfile traffic_fsm.vcd opened for output.
+Time=0 | rst=0 | state=xx | count= x | NS=xxx | EW=xxx
+Time=5 | rst=0 | state=00 | count= 0 | NS=001 | EW=100
+Time=10 | rst=1 | state=00 | count= 0 | NS=001 | EW=100
+Time=15 | rst=1 | state=00 | count= 1 | NS=001 | EW=100
+Time=25 | rst=1 | state=00 | count= 2 | NS=001 | EW=100
+Time=35 | rst=1 | state=00 | count= 3 | NS=001 | EW=100
+Time=45 | rst=1 | state=00 | count= 4 | NS=001 | EW=100
+Time=55 | rst=1 | state=00 | count= 5 | NS=001 | EW=100
+Time=65 | rst=1 | state=00 | count= 6 | NS=001 | EW=100
+Time=75 | rst=1 | state=00 | count= 7 | NS=001 | EW=100
+Time=85 | rst=1 | state=00 | count= 8 | NS=001 | EW=100
+Time=95 | rst=1 | state=00 | count= 9 | NS=001 | EW=100
+Time=105 | rst=1 | state=01 | count= 0 | NS=010 | EW=100
+Time=115 | rst=1 | state=01 | count= 1 | NS=010 | EW=100
+Time=125 | rst=1 | state=01 | count= 2 | NS=010 | EW=100
+Time=135 | rst=1 | state=10 | count= 0 | NS=100 | EW=001
+Time=145 | rst=1 | state=10 | count= 1 | NS=100 | EW=001
+Time=155 | rst=1 | state=10 | count= 2 | NS=100 | EW=001
+Time=165 | rst=1 | state=10 | count= 3 | NS=100 | EW=001
+Time=175 | rst=1 | state=10 | count= 4 | NS=100 | EW=001
+Time=185 | rst=1 | state=10 | count= 5 | NS=100 | EW=001
+Time=195 | rst=1 | state=10 | count= 6 | NS=100 | EW=001
+Time=205 | rst=1 | state=10 | count= 7 | NS=100 | EW=001
+Time=215 | rst=1 | state=10 | count= 8 | NS=100 | EW=001
+Time=225 | rst=1 | state=10 | count= 9 | NS=100 | EW=001
+Time=235 | rst=1 | state=11 | count= 0 | NS=100 | EW=010
+Time=245 | rst=1 | state=11 | count= 1 | NS=100 | EW=010
+Time=255 | rst=1 | state=11 | count= 2 | NS=100 | EW=010
+Time=265 | rst=1 | state=00 | count= 0 | NS=001 | EW=100
+Time=275 | rst=1 | state=00 | count= 1 | NS=001 | EW=100
+Time=285 | rst=1 | state=00 | count= 2 | NS=001 | EW=100
+Time=295 | rst=1 | state=00 | count= 3 | NS=001 | EW=100
+Time=305 | rst=1 | state=00 | count= 4 | NS=001 | EW=100
+Time=315 | rst=1 | state=00 | count= 5 | NS=001 | EW=100
+Time=325 | rst=1 | state=00 | count= 6 | NS=001 | EW=100
+Time=335 | rst=1 | state=00 | count= 7 | NS=001 | EW=100
+Time=345 | rst=1 | state=00 | count= 8 | NS=001 | EW=100
+Time=355 | rst=1 | state=00 | count= 9 | NS=001 | EW=100
+Time=365 | rst=1 | state=01 | count= 0 | NS=010 | EW=100
+Time=375 | rst=1 | state=01 | count= 1 | NS=010 | EW=100
+Time=385 | rst=1 | state=01 | count= 2 | NS=010 | EW=100
+Time=395 | rst=1 | state=10 | count= 0 | NS=100 | EW=001
+Time=405 | rst=1 | state=10 | count= 1 | NS=100 | EW=001
+Time=415 | rst=1 | state=10 | count= 2 | NS=100 | EW=001
+Time=425 | rst=1 | state=10 | count= 3 | NS=100 | EW=001
+Time=435 | rst=1 | state=10 | count= 4 | NS=100 | EW=001
+Time=445 | rst=1 | state=10 | count= 5 | NS=100 | EW=001
+Time=455 | rst=1 | state=10 | count= 6 | NS=100 | EW=001
+Time=465 | rst=1 | state=10 | count= 7 | NS=100 | EW=001
+Time=475 | rst=1 | state=10 | count= 8 | NS=100 | EW=001
+Time=485 | rst=1 | state=10 | count= 9 | NS=100 | EW=001
+Time=495 | rst=1 | state=11 | count= 0 | NS=100 | EW=010
+Time=505 | rst=1 | state=11 | count= 1 | NS=100 | EW=010
+traffic_light_tb.v:20: $finish called at 510 (1s)
