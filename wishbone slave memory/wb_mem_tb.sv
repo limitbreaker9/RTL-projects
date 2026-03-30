@@ -11,7 +11,7 @@ initial begin
     clk=0;
     rst_n=0;
     @(posedge clk);
-  rst_n=1;
+    rst_n=1;
       @(posedge clk);
 
     i.master.write(10,100);
