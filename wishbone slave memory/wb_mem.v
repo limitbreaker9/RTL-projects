@@ -5,7 +5,7 @@
 //supports single read/write cycles
 //no wait states (acknowledge in same cycles as we are going to use the resgister as our memory not any other modules like sram)
 
-module wb_mem(
+module wb_mem (
     input clk,
     input rst_n,
     //wishbone signals
