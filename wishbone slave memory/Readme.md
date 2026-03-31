@@ -19,7 +19,8 @@ A simple, synthesisable **Wishbone B4** compliant 16×8-bit memory slave written
 | `wb_mem.v`         | Synthesizable Wishbone B4 memory slave (Verilog)         |
 | `wishbone_if.sv`   | SystemVerilog interface with master modport and tasks    |
 | `wb_mem_tb.sv`     | Self-checking testbench                                  |
-
+|`terminal output.txt| terminal output                                          |
+|`waveform.png       | waveform of the design                                   |
 ## Address Map
 
 | Address | Description                  |
