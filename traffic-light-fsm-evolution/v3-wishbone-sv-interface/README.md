@@ -78,6 +78,8 @@ proper **SystemVerilog interface** (`wishbone_if`) with modports and built-in
 | `register_write_interface.v` | Verilog | Register block with shadow registers |
 | `wishbone_wrapper.v` | Verilog | Wishbone B3 slave wrapper |
 | `traffic_light_fsm_tb.sv` | SystemVerilog | Testbench using wishbone_if tasks |
+| `output.txt` | Text | Full simulation log (monitor output) |
+| `waveform.png` | Image | EPWave screenshot showing all signals |
 
 ---
 
@@ -126,6 +128,38 @@ xrun -timescale 1ns/1ns -sysv -access +rw design.sv testbench.sv
 **Files for EDA Playground:**
 - `design.sv` — all Verilog modules combined
 - `testbench.sv` — `traffic_light_fsm_tb` + `wishbone_if`
+
+---
+
+## Simulation Output
+
+Key lines from `output.txt`:
+
+```
+green_time = 15       ← read-back verified correct after write
+
+T=285 | state=00 | green_time=15 | yellow_time=5 | update_pending=0
+      ← shadow registers promoted to main after full FSM cycle (11→00)
+
+T=425 | state=01      ← green phase ran exactly 15 clocks ✅
+T=475 | state=10      ← yellow phase ran exactly 5 clocks ✅
+```
+
+---
+
+## Waveform
+
+![EPWave simulation waveform](waveform.png)
+
+Key observations from the waveform:
+- **`wb_cyc_i` / `wb_stb_i`** — three clean back-to-back transactions (write, write, read) with idle cycles between them
+- **`wb_dat_i`** — shows values 15 and 5 being written correctly
+- **`wb_dat_o`** — shows 15 held after the read transaction
+- **`wb_ack_o`** — pulses correctly for each transaction
+- **`green_time[3:0]`** — changes from 10 to 15 at T=285 (after full FSM cycle)
+- **`yellow_time[3:0]`** — changes from 3 to 5 at T=285
+- **`present[1:0]`** — cycles 00→01→10→11→00 continuously
+- **`NS[2:0]` / `EW[2:0]`** — change correctly with each state transition
 
 ---
 
