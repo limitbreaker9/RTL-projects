@@ -19,7 +19,6 @@ proper **SystemVerilog interface** (`wishbone_if`) with modports and built-in
 | v1 | `v1-basic-fsm` | Basic Moore FSM — hardcoded green/yellow timings |
 | v2 | `v2-wishbone-registers` | Wishbone B3 slave — runtime configurable timings via flat Verilog ports |
 | **v3** | **`v3-wishbone-sv-interface`** | **SystemVerilog `wishbone_if` interface with modports and tasks** |
-| v4 *(planned)* | `v4-riscv-cpu` | Sakthi RISC-V CPU core as Wishbone master |
 
 ---
 
@@ -188,17 +187,6 @@ Key observations from the waveform:
 - One idle clock between consecutive bus transactions is required.
 
 ---
-
-## Next: v4 — Sakthi RISC-V CPU Integration
-
-The `wishbone_if.master` modport will be connected to the **Sakthi RISC-V  
-CPU core**, replacing the testbench stimulus. The CPU will memory-map the  
-traffic light registers and control timing via software load/store  
-instructions.
-
-```
-Sakthi RISC-V  ──[wishbone_if.master]──►  top_traffic_fsm  ──►  NS / EW
-```
 
 ---
 
