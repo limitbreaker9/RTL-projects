@@ -345,24 +345,3 @@ This confirms the safe shadow-register update mechanism worked correctly — the
 
 ---
 
-## What to Name This File
-
-Name it **`README.md`** and place it in the `v4/` subfolder of your repo:
-
-```
-RTL-projects/
-└── traffic-light-fsm-evolution/
-    ├── v1/
-    ├── v2/
-    ├── v3/
-    └── v4/
-        ├── README.md          ← this file
-        ├── .gitignore         ← excludes *.elf, *.bin, sim.out
-        ├── top_soc_v4.v
-        ├── ...
-        ├── firmware.c
-        ├── firmware.hex       ← commit this (needed for simulation)
-        └── waveform.png
-```
-
-If you want a specific naming convention consistent with your other versions, `README_v4.md` also works, but standard GitHub practice renders `README.md` automatically on the folder page.
