@@ -185,20 +185,10 @@ The firmware writes green time = **15**, yellow time = **5**, then enables the F
 
 The firmware is compiled using the **RISC-V 64-bit non-ELF (bare-metal) GCC toolchain** (`riscv64-unknown-elf-gcc`). The key requirement is that `$readmemh` in Verilog needs the firmware in **Intel HEX format**, which is produced via `objcopy`.
 
-> **What to commit vs ignore:**
-> - `firmware.c` ✅ — source, always commit
-> - `firmware.hex` ✅ — required by `$readmemh` in `wb_ram.v` at simulation time, commit this
-> - `firmware.elf` ❌ — build artifact, add to `.gitignore`
-> - `firmware.bin` ❌ — build artifact, add to `.gitignore`
->
-> Recommended `.gitignore` for this folder:
-> ```
-> *.elf
-> *.bin
-> *.o
-> *.out
-> sim.out
-> ```
+> **Firmware files**
+> - `firmware.c`  — source
+> - `firmware.hex`  — required by `$readmemh` in `wb_ram.v` at simulation time, commit this
+
 
 **Step 1 — Compile C to ELF:**
 ```bash
@@ -280,9 +270,9 @@ gtkwave traffic.vcd
 - Clock period: **10 ns** (toggled every 5 ns).
 - Reset (`rst_n`) held low for **40 ns**, then de-asserted.
 - At `T = 2000 ns`, the testbench checks:
-  - `green_time_shadow == 15` ✅
-  - `yellow_time_shadow == 5` ✅
-  - `enable == 1` ✅
+  - `green_time_shadow == 15`
+  - `yellow_time_shadow == 5`
+  - `enable == 1`
 - FSM state transitions are logged whenever the state changes.
 - Simulation ends at `T = 20,000 ns` (`#20000 $finish`).
 - A `$dumpvars` call records all signals to `traffic.vcd`.
